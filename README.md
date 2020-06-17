@@ -1,2 +1,2 @@
-# Lazy Dev Journal
+# Lazy Dev Journals
   - [Linux-Issues](linux-issues.md)
