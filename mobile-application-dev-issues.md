@@ -2,7 +2,7 @@
 ### Didn't find class "com.google.firebase.provider.FirebaseInitProvider" on path: DexPathList (on KitKat/ API 16)
 #### React-Native-0.62 & Android
 
-##### # App level build.gradle
+##### # App level build.gradle at `/android/app/build.gradle`
 ```sh
   android{
     ...
@@ -57,7 +57,7 @@
 #### React-Native-0.62 & Android
 #### Flipper related issue
 
-##### # App level build.gradle
+##### # App level build.gradle at `/android/app/build.gradle`
 ```sh
   dependencies{
   
