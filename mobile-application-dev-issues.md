@@ -1,3 +1,59 @@
+
+## Wed 08/07/20
+### Custom Fonts in React Native
+#### React Native version > 0.60
+
+```sh
+# warn Your project is using deprecated "rnpm" config that will stop working from next release. 
+# Please use a "react-native.config.js" file to configure the React Native CLI.
+```
+  - create an `assets` folder in the root of your project. Then create a `fonts` folder inside it. 
+    Finally, copy your font files into the `fonts` folder.
+  - Create a file in the root folder of your project called `react-native.config.js`, and add the following:
+  
+    ```
+    module.exports = {
+      assets: ['./assets/fonts/']
+    };
+    
+    //Then, run the following command in your terminal:
+    // # react-native link
+    ```
+   - On Android, it will copy the font files to `/android/app/src/main/assets/fonts`. 
+      On iOS, it will modify your Info.plist file to include references to your fonts, similar to this:
+    
+      ```
+        <key>UIAppFonts</key>
+        <array>
+           <string>Ubuntu-Bold.ttf</string>
+        </array>
+      ```
+    
+   - Use the Font
+   
+      ```
+      const styles = StyleSheet.create({
+          custom: {
+              fontFamily: 'Ubuntu-Bold',
+              fontSize: 32
+          }
+        });
+      ```
+      
+   - To reduce the risk of confusion, try to name your file the same way as it shows up in FontBook (macOS) when you double-click on it. Failing that, you can always use platform specific code, like this:
+   
+      ```
+        const styles = StyleSheet.create({
+            custom: {
+                fontFamily: Platform.OS === "ios" ? 'AsCalledByFontBook' : 'some_filename.ttf',
+                fontSize: 32
+            }
+        });
+      ```
+   - Done 🎉🎉🎉
+
+---
+
 ## Mon 06/07/20
 ### Didn't find class "com.google.firebase.provider.FirebaseInitProvider" on path: DexPathList (on KitKat/ API 16)
 #### React-Native-0.62 & Android
