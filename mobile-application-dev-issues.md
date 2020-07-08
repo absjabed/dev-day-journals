@@ -3,10 +3,11 @@
 ### Custom Fonts in React Native
 #### React Native version > 0.60
 
-```sh
-# warn Your project is using deprecated "rnpm" config that will stop working from next release. 
-# Please use a "react-native.config.js" file to configure the React Native CLI.
-```
+##### You might get warning like below if you use `rnpm` on react native version > 0.60
+  ```
+  warn Your project is using deprecated "rnpm" config that will stop working from next release. 
+  Please use a "react-native.config.js" file to configure the React Native CLI.
+  ```
   - create an `assets` folder in the root of your project. Then create a `fonts` folder inside it. 
     Finally, copy your font files into the `fonts` folder.
   - Create a file in the root folder of your project called `react-native.config.js`, and add the following:
@@ -51,6 +52,8 @@
         });
       ```
    - Done 🎉🎉🎉
+   
+ [Using Custom Fonts in React Native](https://www.youtube.com/watch?v=60XGVZffPeE)
 
 ---
 
