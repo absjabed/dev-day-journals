@@ -1,3 +1,21 @@
+## Sat 18/07/20
+### Create a New local branch and push it tp remote Git repository and track it.
+```sh
+
+# Create a new branch:
+git checkout -b feature_branch_name
+
+# Edit, add and commit your files.
+git add . && git commit -am "comment on your changes..."
+
+# Push your branch to the remote repository:
+git push -u origin feature_branch_name
+
+```
+[solution](https://forum.freecodecamp.org/t/push-a-new-local-branch-to-a-remote-git-repository-and-track-it-too/13222)
+
+---
+
 ## Wed 17/06/20
 ### Rename a Local and Remote Git Branch 
 ```sh
