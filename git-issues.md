@@ -1,3 +1,18 @@
+## Tue 09/01/20
+### Modify last git commit or unpushed commit message?
+```sh
+
+# Add latest changes:
+git add .
+
+# Amending the most recent commit message
+git commit --amend -m "New commit message"
+
+```
+[Reference](https://docs.github.com/en/github/committing-changes-to-your-project/changing-a-commit-message)
+
+---
+
 ## Sat 18/07/20
 ### Create a New local branch and push it tp remote Git repository and track it.
 ```sh
