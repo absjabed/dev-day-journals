@@ -10,6 +10,8 @@
 - Now Run: `compmgmt.msc` -> **Local Users and Groups** -> **Users** -> *postgres* -> **Member of** -> **Administrators** -> **Remove**
 - Again Run: `compmgmt.msc` -> **Local Users and Groups** -> **Users** -> *postgres* -> **Member of** -> **Add…** -> **Power Users** -> **OK**
 - Finally set **Environment Variable PATH** `C:\Program Files\PostgreSQL\13\bin;C:\Program Files\PostgreSQL\13\lib;`
+- Now run **pgAdmin4.exe** from `C:\Program Files\PostgreSQL\13\pgAdmin 4\bin`
+- You are good to go.
 
 ---
 
