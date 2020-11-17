@@ -1,3 +1,47 @@
+## Tue 17/11/2020
+### ./gradlew command not found or ./gradlew clean execution permission denied
+#### React-Native Android on Ubuntu
+
+##### On Ubuntu Following this guide work for me `cd android` -> `chmod +x gradlew` -> `./gradlew clean` -> `cd .. && react-native run-android`
+
+ [./gradlew command not found](https://stackoverflow.com/a/64278631/5277438)
+ 
+---
+
+## Tue 17/11/2020
+### adb server version (41) doesn’t match this client (39); killing
+#### React-Native Android on Ubuntu
+
+##### Check current adb version in available Sdk
+```sh
+$ adb –-version
+Android Debug Bridge version 1.0.39
+Version 1:8.1.0+r23-5~18.04
+Installed as /usr/lib/android-sdk/platform-tools/adb
+```
+##### To fix:
+```sh
+root@super:/home/jbd$ /home/jbd/Android/Sdk/platform-tools/adb --version
+ Android Debug Bridge version 1.0.41
+ Version 29.0.6-6198805
+ Installed as /home/jbd/Android/Sdk/platform-tools/adb
+ 
+ root@super:/home/jbd$ cp /home/jbd/Android/Sdk/platform-tools/adb /usr/bin/adb
+ root@super:/home/jbd$ adb --version
+ Android Debug Bridge version 1.0.41
+ Version 29.0.6-6198805
+ Installed as /usr/bin/adb
+
+#adb devices
+ List of devices attached
+ 330061df2d92b225    device
+ emulator-5554    device
+
+#adb -s 330061df2d92b225 shell
+ OnePlus6:/
+```
+
+---
 
 ## Wed 08/07/20
 ### Custom Fonts in React Native
