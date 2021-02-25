@@ -26,6 +26,7 @@
 - To remove previous swapspace [check this-> swap-removing](https://web.mit.edu/rhel-doc/5/RHEL-5-manual/Deployment_Guide-en-US/s1-swap-removing.html)
 
 [Reference-> How to move swap file to another physical disk](https://forums.linuxmint.com/viewtopic.php?t=317474)
+
 [Reference-> How do I add swap after system installation?](https://askubuntu.com/questions/33697/how-do-i-add-swap-after-system-installation)
 
 ---
