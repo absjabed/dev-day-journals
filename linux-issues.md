@@ -1,3 +1,18 @@
+## Thu 15/04/21
+### Run Docker commands without sudo
+- Add the `docker` group if it doesn't already exist
+```console
+$ sudo groupadd docker
+```
+- Add the connected user `$USER` to the docker group
+```console
+$ sudo usermod -aG docker $USER
+```
+- Restart your machine or Logout and Login again
+- Now run `$ docker iamges` without sudo
+
+---
+
 ## Tue 23/02/21
 ### Resize & Move linux **Swap partition** or **Swap file** from **SSD** to another partition
 #### [Why are swap partitions discouraged on SSD drives, are they harmful?](https://askubuntu.com/questions/652337/why-are-swap-partitions-discouraged-on-ssd-drives-are-they-harmful)
