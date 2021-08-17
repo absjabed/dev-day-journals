@@ -1,3 +1,18 @@
+## Tue 17/08/21
+### Adding multiple git remote url for a repository.
+```sh
+
+# Add first remote:
+git remote set-url --add origin <a remote>
+
+# Add another remote
+git remote set-url --add origin <another remote>
+
+```
+[Reference](https://git-scm.com/docs/git-remote)
+
+---
+
 ## Tue 09/01/20
 ### Modify last git commit or unpushed commit message?
 ```sh
